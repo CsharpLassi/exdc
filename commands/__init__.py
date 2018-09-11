@@ -5,4 +5,4 @@ from commands.command_manager import CommandManager
 import commands.push
 import commands.pop
 
-import commands.arithmetik.add
+import commands.arithmetic.add
