@@ -24,5 +24,6 @@ def main():
         else:
             print("exdc: wrong command ")
 
+
 if __name__ == '__main__':
     main()

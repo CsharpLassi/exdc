@@ -9,14 +9,15 @@ from stack import Stack
 class Push(Command):
     __rules = \
         {
+            float: r'[0-9]+[.][0-9]+',
             int: r'[0-9]',
-            float: r'[0-9]+[.][0-9]+'
         }
 
     @staticmethod
     def match(input_value: str):
         for rule in Push.__rules:
-            if re.match(Push.__rules[rule], input_value):
+            result = re.match(Push.__rules[rule], input_value)
+            if result:
                 return rule(input_value)
 
     def execute(self, value, stack: Stack):
