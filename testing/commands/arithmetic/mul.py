@@ -1,17 +1,17 @@
 import unittest
 
-from commands.arithmetic.sub import Sub
+from commands.arithmetic.mul import Mul
 from stack import Stack
 
 
 class MulTest(unittest.TestCase):
     def test_parse(self):
-        cmd = Sub()
+        cmd = Mul()
         self.assertTrue(cmd.match("mul"))
         self.assertTrue(cmd.match("*"))
 
     def test_function(self):
-        cmd = Sub()
+        cmd = Mul()
         stack = Stack()
 
         stack.push(3)
