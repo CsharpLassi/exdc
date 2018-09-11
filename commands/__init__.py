@@ -9,3 +9,4 @@ import commands.arithmetic.add
 import commands.arithmetic.sub
 import commands.arithmetic.mul
 import commands.arithmetic.divI
+import commands.arithmetic.divF
